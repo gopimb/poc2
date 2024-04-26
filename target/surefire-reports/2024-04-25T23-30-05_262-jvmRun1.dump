@@ -1,0 +1,119 @@
+# Created at 2024-04-25T23:30:17.199
+org.testng.TestNGException: 
+Cannot instantiate class TestCases.LoginPageTest
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:41)
+	at org.testng.ITestObjectFactory.newInstance(ITestObjectFactory.java:18)
+	at org.testng.internal.objects.SimpleObjectDispenser.instantiateUsingDefaultConstructor(SimpleObjectDispenser.java:178)
+	at org.testng.internal.objects.SimpleObjectDispenser.createInstance(SimpleObjectDispenser.java:87)
+	at org.testng.internal.objects.SimpleObjectDispenser.dispense(SimpleObjectDispenser.java:40)
+	at org.testng.internal.objects.GuiceBasedObjectDispenser.dispense(GuiceBasedObjectDispenser.java:28)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:106)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:136)
+	at org.testng.TestClass.getInstances(TestClass.java:129)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:109)
+	at org.testng.TestClass.init(TestClass.java:101)
+	at org.testng.TestClass.<init>(TestClass.java:66)
+	at org.testng.TestRunner.initMethods(TestRunner.java:464)
+	at org.testng.TestRunner.init(TestRunner.java:336)
+	at org.testng.TestRunner.init(TestRunner.java:289)
+	at org.testng.TestRunner.<init>(TestRunner.java:179)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:643)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:225)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:115)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1349)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1325)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1167)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.testng.internal.objects.InstanceCreator.newInstance(InstanceCreator.java:38)
+	... 30 more
+Caused by: org.openqa.selenium.WebDriverException: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=124.0.6367.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INKOLSOUMBANERJ', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF77A81F922+3045234]
+	(No symbol) [0x00007FF77A4C3652]
+	(No symbol) [0x00007FF77A387564]
+	(No symbol) [0x00007FF77A371891]
+	(No symbol) [0x00007FF77A370FB7]
+	(No symbol) [0x00007FF77A3708D4]
+	(No symbol) [0x00007FF77A3706C0]
+	(No symbol) [0x00007FF77A36E674]
+	(No symbol) [0x00007FF77A36ECBC]
+	(No symbol) [0x00007FF77A36D626]
+	(No symbol) [0x00007FF77A374E35]
+	(No symbol) [0x00007FF77A36D356]
+	(No symbol) [0x00007FF77A370322]
+	(No symbol) [0x00007FF77A36E674]
+	(No symbol) [0x00007FF77A36ECBC]
+	(No symbol) [0x00007FF77A36D626]
+	(No symbol) [0x00007FF77A36428A]
+	(No symbol) [0x00007FF77A36D356]
+	(No symbol) [0x00007FF77A36CB8B]
+	(No symbol) [0x00007FF77A36C624]
+	(No symbol) [0x00007FF77A389A81]
+	(No symbol) [0x00007FF77A35D121]
+	(No symbol) [0x00007FF77A35CB7B]
+	(No symbol) [0x00007FF77A40537F]
+	(No symbol) [0x00007FF77A4048E0]
+	(No symbol) [0x00007FF77A3F9B53]
+	(No symbol) [0x00007FF77A3C813C]
+	(No symbol) [0x00007FF77A3C8D71]
+	GetHandleVerifier [0x00007FF77A84E89D+3237613]
+	GetHandleVerifier [0x00007FF77A890BA7+3508727]
+	GetHandleVerifier [0x00007FF77A88976F+3478975]
+	GetHandleVerifier [0x00007FF77A5FF1C6+815126]
+	(No symbol) [0x00007FF77A4CED0F]
+	(No symbol) [0x00007FF77A4C9854]
+	(No symbol) [0x00007FF77A4C99E2]
+	(No symbol) [0x00007FF77A4BA574]
+	BaseThreadInitThunk [0x00007FFE473A7344+20]
+	RtlUserThreadStart [0x00007FFE481826B1+33]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at utils.BasePage.<init>(BasePage.java:29)
+	at TestCases.LoginPageTest.<init>(LoginPageTest.java:20)
+	... 36 more
+
+
